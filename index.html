@@ -430,7 +430,7 @@ h1{top:calc(env(safe-area-inset-top,0px) + 2.5dvh)!important;font-size:clamp(32p
     if(!n){e.preventDefault();$('err').textContent='Please add your name first.';$('rn').focus();return}
     $('err').textContent='';
     var t='Assalamu alaikum! This is '+n+'. '+(attend?'I will be joining the wedding of Shaheen & Salva on 27 December 2026 with '+$('rg').value+' guest(s).':'I am sorry, I will not be able to join the wedding of Shaheen & Salva on 27 December 2026.');
-    send.href='https://script.google.com/macros/s/AKfycbzPd8kK5j5ufJ6WOJL84MW8XKjUkxNcQi7ERiOfhc-DLYMcjuD3H7olXFMkq8GEq9_Usw/exec?name='+encodeURIComponent(n)+'&guests='+encodeURIComponent($('rg').value);
+    send.href='https://script.google.com/macros/s/AKfycbwqwBPcUYnVwqmwGN13K5sUkA011NXFhXqTujL_4KKWxXav2fK5Ypfm6Now9vOvNvY3/exec?name='+encodeURIComponent(n)+'&guests='+encodeURIComponent($('rg').value);
   });
   var go=false;function run(){if(go)return;go=true;start()}
   if(document.fonts&&document.fonts.ready){Promise.race([document.fonts.ready,new Promise(function(r){setTimeout(r,1200)})]).then(function(){setTimeout(run,250)})}
